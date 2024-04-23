@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:layout_margin="35dp">
+
+        <TextView
+            android:id="@+id/nomstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de la Biere" />
+
+        <EditText
+            android:id="@+id/noms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="35dp">
+
+        <TextView
+            android:id="@+id/MicroBrasserietext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MicroBrasserie" />
+
+        <EditText
+            android:id="@+id/MicroBrasserie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+    </LinearLayout>
+
+
+    <RatingBar
+        android:id="@+id/etoile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:numStars="5"
+        android:stepSize="1"
+        android:isIndicator="true"/>
+
+    <Button
+        android:id="@+id/enregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal"
+        android:layout_margin="35dp"
+        android:layout_marginBottom="85dp"
+        android:text="Enregistrer" />
+
+    <Button
+        android:id="@+id/voir"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal"
+        android:layout_margin="35dp"
+        android:layout_marginBottom="85dp"
+        android:text="Voir les 3 Bières les mieux évaluées" />
+
+
+</LinearLayout>
